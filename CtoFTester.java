@@ -1,6 +1,7 @@
 public class CtoFTester{
   public static void main(String[] args){
-    System.out.println("Hello world!");
+    System.out.println(celsiusToFahrenheit(15));
+    System.out.println(celsiusToFahrenheit(42.4));
   }
 
   /*
@@ -19,4 +20,13 @@ public class CtoFTester{
     For fahrenheitToCelsius, it should return the celsius equivilant of the inputted fahrenheit.
 
   */
+
+  public static double celsiusToFahrenheit(double celsius){
+    double converted = celsius *1.8 + 32;
+    return converted;
+  }
+
+  //public static double fahrenheitToCelsius(double fahrenheit){
+
+  //}
 }
